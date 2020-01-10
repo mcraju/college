@@ -1,0 +1,25 @@
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Username : <input name="username" type="text"><br>
+    Password : <input name="password" type="password"><br>
+    Email : <input name="email" type="email"><br>
+    Staff_Name : <input name="staff_name" type="text"><br>
+    Specialization : <input name="specialization" type="text"><br>
+    Experience : <input name="experience" type="text"><br>
+    Mobile-No : <input name="mobile_no" type="text"><br>
+    Gender : <input name="gender" type="text"><br>
+    Student-Image : <input name="student_image" type="file"><button type="submit">Upload</button><br>
+    Department :
+    <select name="department">
+        <option value="Mechanical">Mechanical</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Civil">Civil</option>
+        <option value="Computer Science">Computer Science</option>
+    </select><br>
+    <input type="submit" value="SAVE">
+
+</form>
+<br><br><br>
+<a href="{% url 'royals:index' %}">BACK</a>

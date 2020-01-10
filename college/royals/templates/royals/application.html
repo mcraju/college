@@ -1,0 +1,11 @@
+<h2>Application Form</h2>
+
+<form action="" method="post">
+    {% csrf_token %}
+    Student-Name : <input name="student_name" type="text"><br>
+    Email : <input name="email" type="email"><br>
+    SSC_Percentage : <input name="ssc_percentage" type="text"><br>
+    Inter_Percentage : <input name="inter_percentage" type="text"><br>
+    <input type="submit" value="SAVE">
+</form><br><br>
+<a href="{% url 'royals:index' %}">Back</a>
